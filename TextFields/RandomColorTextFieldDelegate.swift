@@ -12,9 +12,9 @@ import UIKit
 class RandomColorTextFieldDelegate: NSObject, UITextFieldDelegate {
     
     func getRandomColor() -> UIColor {
-        let red: CGFloat = CGFloat(1 + arc4random() % 255)
-        let blue: CGFloat = CGFloat( 1 + arc4random() % 255)
-        let green: CGFloat = CGFloat(1 + arc4random() % 255)
+        let red: CGFloat = CGFloat( arc4random() % 255)
+        let blue: CGFloat = CGFloat( arc4random() % 255)
+        let green: CGFloat = CGFloat( arc4random() % 255)
         let randomColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
         return randomColor
     }
@@ -25,6 +25,7 @@ class RandomColorTextFieldDelegate: NSObject, UITextFieldDelegate {
     }
     
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        textField.clearButtonMode = .always
         return true
     }
     

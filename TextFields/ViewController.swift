@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // MARK: Text Field Delegate objects
     let emojiDelegate = EmojiTextFieldDelegate()
     let colorizerDelegate = ColorizerTextFieldDelegate()
+    let randomColorTextFieldDelegate = RandomColorTextFieldDelegate()
     
     // MARK: Life Cycle
     
@@ -31,7 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.characterCountLabel.isHidden = true
         
         // Set the three delegates
-        self.textField1.delegate = emojiDelegate
+        self.textField1.delegate = randomColorTextFieldDelegate
         self.textField2.delegate = colorizerDelegate
         self.textField3.delegate = self
     }
