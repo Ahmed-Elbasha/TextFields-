@@ -11,12 +11,17 @@ import UIKit
 
 class RandomColorTextFieldDelegate: NSObject, UITextFieldDelegate {
     
+    let colors: [UIColor] = [.red, .orange, .yellow, .green, .blue, .purple, .brown]
+    
     func getRandomColor() -> UIColor {
-        let red: CGFloat = CGFloat( arc4random() % 255)
-        let blue: CGFloat = CGFloat( arc4random() % 255)
-        let green: CGFloat = CGFloat( arc4random() % 255)
-        let randomColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
-        return randomColor
+//        let red: CGFloat = CGFloat( arc4random() % 255)
+//        let blue: CGFloat = CGFloat( arc4random() % 255)
+//        let green: CGFloat = CGFloat( arc4random() % 255)
+//        let randomColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+//        return randomColor
+        
+        let randomIndex = Int(arc4random() % UInt32(colors.count))
+        return colors[randomIndex]
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
