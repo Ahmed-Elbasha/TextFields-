@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,57 +19,70 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5d-35-VHU">
-                                <rect key="frame" x="16" y="28" width="288" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your zip code here." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="b5d-35-VHU">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CnV-IE-zXV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="postal-code"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FND-fQ-FKU">
-                                <rect key="frame" x="16" y="66" width="288" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="32.99" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FND-fQ-FKU">
+                                <rect key="frame" x="16" y="66" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ywh-81-o7i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8x-lW-EqZ">
-                                <rect key="frame" x="16" y="104" width="288" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="cZ4-Ff-5vX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ruo-WP-5KQ">
+                                <rect key="frame" x="16" y="104" width="343" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="x8x-lW-EqZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="cZ4-Ff-5vX"/>
+                                            <constraint firstAttribute="width" constant="286" id="vAO-b4-rv1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                    </textField>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0WB-Pv-b24">
+                                        <rect key="frame" x="294" y="0.0" width="51" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="RS2-TE-v95"/>
+                                            <constraint firstAttribute="width" constant="49" id="WoN-6j-etH"/>
+                                        </constraints>
+                                    </switch>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vX4-tH-Tjk">
-                                <rect key="frame" x="128" y="163" width="65" height="44"/>
+                                <rect key="frame" x="155" y="163" width="65" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="SnW-AU-NL9"/>
                                     <constraint firstAttribute="width" constant="65" id="k9t-T4-bqu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.58709395559210531" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.58709395559210531" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="b5d-35-VHU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="21H-QM-esp"/>
                             <constraint firstItem="b5d-35-VHU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="CDF-pd-P9F"/>
                             <constraint firstItem="FND-fQ-FKU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="MX8-Wf-RzC"/>
-                            <constraint firstItem="x8x-lW-EqZ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="YuR-vl-4bl"/>
+                            <constraint firstItem="Ruo-WP-5KQ" firstAttribute="top" secondItem="FND-fQ-FKU" secondAttribute="bottom" constant="8" symbolic="YES" id="NyR-Ra-Ysn"/>
+                            <constraint firstItem="Ruo-WP-5KQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Vye-Jc-TUC"/>
                             <constraint firstItem="b5d-35-VHU" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Zte-LW-xA1"/>
-                            <constraint firstItem="x8x-lW-EqZ" firstAttribute="top" secondItem="FND-fQ-FKU" secondAttribute="bottom" constant="8" id="a5T-bo-Ks8"/>
                             <constraint firstAttribute="centerX" secondItem="vX4-tH-Tjk" secondAttribute="centerX" id="gm5-EE-q6d"/>
-                            <constraint firstItem="vX4-tH-Tjk" firstAttribute="top" secondItem="x8x-lW-EqZ" secondAttribute="bottom" constant="29" id="hvZ-Rg-29s"/>
                             <constraint firstItem="FND-fQ-FKU" firstAttribute="top" secondItem="b5d-35-VHU" secondAttribute="bottom" constant="8" id="juk-Pm-vD8"/>
-                            <constraint firstItem="x8x-lW-EqZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="k04-Jr-pgf"/>
+                            <constraint firstItem="vX4-tH-Tjk" firstAttribute="top" secondItem="Ruo-WP-5KQ" secondAttribute="bottom" constant="29" id="nmE-RT-XHf"/>
                             <constraint firstItem="FND-fQ-FKU" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="oAk-yx-rSh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ruo-WP-5KQ" secondAttribute="trailing" id="uc2-BW-htQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -79,9 +97,4 @@
             <point key="canvasLocation" x="-127" y="315"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
