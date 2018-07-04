@@ -29,9 +29,8 @@ class RandomColorTextFieldDelegate: NSObject, UITextFieldDelegate {
         return true
     }
     
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        textField.clearButtonMode = .always
-        return true
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.text = ""
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
