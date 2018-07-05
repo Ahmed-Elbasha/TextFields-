@@ -22,7 +22,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     let emojiDelegate = EmojiTextFieldDelegate()
     let colorizerDelegate = ColorizerTextFieldDelegate()
     let randomColorTextFieldDelegate = RandomColorTextFieldDelegate()
-    
+    let cashTextFieldDelegate = CashTextFieldDelegate()
+    let lockableTextFieldDelegate = LockableTextFieldDelegate()
+    let zipCodeTextFieldDelegate = ZipCodeTextFieldDelegate()
     // MARK: Life Cycle
     
     override func viewDidLoad() {
@@ -32,9 +34,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.characterCountLabel.isHidden = true
         
         // Set the three delegates
-        self.textField1.delegate = randomColorTextFieldDelegate
-        self.textField2.delegate = colorizerDelegate
-        self.textField3.delegate = self
+        self.textField1.delegate = zipCodeTextFieldDelegate
+        self.textField2.delegate = cashTextFieldDelegate
+        self.textField3.delegate = lockableTextFieldDelegate
     }
     
     // MARK: Text Field Delegate Methods
