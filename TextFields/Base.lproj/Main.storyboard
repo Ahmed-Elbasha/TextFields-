@@ -56,6 +56,9 @@
                                             <constraint firstAttribute="height" constant="30" id="RS2-TE-v95"/>
                                             <constraint firstAttribute="width" constant="49" id="WoN-6j-etH"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="textfieldSwitchValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="0DH-Rt-Grd"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -90,6 +93,7 @@
                         <outlet property="textField1" destination="b5d-35-VHU" id="JJa-zq-XKJ"/>
                         <outlet property="textField2" destination="FND-fQ-FKU" id="wKW-y7-Gz9"/>
                         <outlet property="textField3" destination="x8x-lW-EqZ" id="D4x-7k-BPl"/>
+                        <outlet property="textfieldSwitch" destination="0WB-Pv-b24" id="gIe-dK-k1v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -17,7 +17,6 @@
 		7E58CD3420ECC5EB00AB0FF1 /* RandomColorTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58CD3320ECC5EB00AB0FF1 /* RandomColorTextFieldDelegate.swift */; };
 		7E5AC1C520EE2D6F00D5D2DD /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AC1C420EE2D6F00D5D2DD /* ZipCodeTextFieldDelegate.swift */; };
 		7E5AC1C720EE2DBA00D5D2DD /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AC1C620EE2DBA00D5D2DD /* CashTextFieldDelegate.swift */; };
-		7E5AC1C920EE2E0C00D5D2DD /* LockableTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AC1C820EE2E0C00D5D2DD /* LockableTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		7E58CD3320ECC5EB00AB0FF1 /* RandomColorTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorTextFieldDelegate.swift; sourceTree = "<group>"; };
 		7E5AC1C420EE2D6F00D5D2DD /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
 		7E5AC1C620EE2DBA00D5D2DD /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
-		7E5AC1C820EE2E0C00D5D2DD /* LockableTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockableTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 				7E58CD3320ECC5EB00AB0FF1 /* RandomColorTextFieldDelegate.swift */,
 				7E5AC1C420EE2D6F00D5D2DD /* ZipCodeTextFieldDelegate.swift */,
 				7E5AC1C620EE2DBA00D5D2DD /* CashTextFieldDelegate.swift */,
-				7E5AC1C820EE2E0C00D5D2DD /* LockableTextFieldDelegate.swift */,
 			);
 			name = "Text Field Delegates";
 			sourceTree = "<group>";
@@ -174,7 +171,6 @@
 				4D08C4921A12860200A95F43 /* ColorizerTextFieldDelegate.swift in Sources */,
 				4D08C4721A126D0300A95F43 /* ViewController.swift in Sources */,
 				4D08C4701A126D0300A95F43 /* AppDelegate.swift in Sources */,
-				7E5AC1C920EE2E0C00D5D2DD /* LockableTextFieldDelegate.swift in Sources */,
 				7E5AC1C520EE2D6F00D5D2DD /* ZipCodeTextFieldDelegate.swift in Sources */,
 				4D08C4901A126EC400A95F43 /* EmojiTextFieldDelegate.swift in Sources */,
 				7E5AC1C720EE2DBA00D5D2DD /* CashTextFieldDelegate.swift in Sources */,
